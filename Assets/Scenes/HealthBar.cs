@@ -17,13 +17,13 @@ public class HealthBar : MonoBehaviour
     private void Awake()
     {
         _slider = gameObject.GetComponent<Slider>();
-        _currentBarPosition = CurrentHealth();
+        _currentBarPosition = GetCurrentHealth();
         _slider.value = _currentBarPosition;
     }
 
     private void Update()
     {
-        if (_currentBarPosition != CurrentHealth())
+        if (_currentBarPosition != GetCurrentHealth())
             ChangeHandlePosition();
     }
 
@@ -39,12 +39,12 @@ public class HealthBar : MonoBehaviour
 
     private void ChangeHandlePosition()
     {
-        float barChange = _barChangeStartingSpeed * (CurrentHealth() - _currentBarPosition) * Time.deltaTime;
+        float barChange = _barChangeStartingSpeed * (GetCurrentHealth() - _currentBarPosition) * Time.deltaTime;
         _currentBarPosition = Mathf.Clamp(_currentBarPosition + barChange, 0f, 1f);
         _slider.value = _currentBarPosition;
     }
 
-    private float CurrentHealth()
+    private float GetCurrentHealth()
     {
         return 1f * _health / _maxHealth;
     }
