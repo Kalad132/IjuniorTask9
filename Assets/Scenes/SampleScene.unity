@@ -203,7 +203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1179493534}
+      - m_Target: {fileID: 1179493535}
         m_MethodName: Heal
         m_Mode: 1
         m_Arguments:
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1179493534}
+      - m_Target: {fileID: 1179493535}
         m_MethodName: TakeDamage
         m_Mode: 1
         m_Arguments:
@@ -631,6 +631,7 @@ GameObject:
   - component: {fileID: 1179493532}
   - component: {fileID: 1179493533}
   - component: {fileID: 1179493534}
+  - component: {fileID: 1179493535}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -720,6 +721,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d6a024638b96b84b822fa0ae2655457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1179493535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179493531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc5769f0fcc688438aede66ce8ae7ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1220579520
@@ -1086,7 +1099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5.0000153, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1645823033
