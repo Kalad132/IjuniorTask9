@@ -735,6 +735,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdc5769f0fcc688438aede66ce8ae7ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _healthChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1179493534}
+        m_MethodName: OnHealthChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1220579520
 GameObject:
   m_ObjectHideFlags: 0
